@@ -14,13 +14,13 @@
         android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="140dp"
         android:text="Создайте аккаунт"
+        android:textColor="#fdfdff"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textColor="#fdfdff"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,16 +37,16 @@
         android:hint="Enter login" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:ems="10"
-        android:inputType="text"
-        android:hint="Enter password" />
+        android:hint="Enter email"
+        android:inputType="text" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -57,13 +57,13 @@
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="77dp"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
         android:layout_marginHorizontal="20dp"
-        android:textSize="18sp"
+        android:layout_marginTop="150dp"
         android:fontFamily="@font/inter_extrabold"
+        android:text="Button"
         android:textColor="#fdfdfd"
-        android:text="Button" />
+        android:textSize="18sp" />
 
 </LinearLayout>

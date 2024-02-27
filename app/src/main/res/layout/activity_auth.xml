@@ -7,8 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#201E28"
-    tools:context="com.indigo.first_ui_project.MainActivity">
+    android:background="#e2a600"
+    tools:context=".AuthActivity">
 
     <TextView
         android:id="@+id/info"
@@ -17,7 +17,7 @@
         android:layout_gravity="center"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="140dp"
-        android:text="Создайте аккаунт"
+        android:text="Authorization"
         android:textColor="#fdfdff"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -28,25 +28,16 @@
         app:layout_constraintVertical_bias="0.143" />
 
     <EditText
-        android:id="@+id/login"
+        android:id="@+id/login_auth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:ems="10"
-        android:inputType="text"
-        android:hint="Enter login" />
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:ems="10"
-        android:hint="Enter email"
+        android:hint="Enter login"
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_auth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -55,24 +46,25 @@
         android:inputType="text" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_auth"
         android:layout_width="match_parent"
         android:layout_height="77dp"
         android:layout_gravity="center"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="150dp"
         android:fontFamily="@font/inter_extrabold"
-        android:text="Sign up"
-        android:textColor="#fdfdfd"
-        android:textSize="18sp" />
+        android:text="Sign in"
+        android:textColor="#FFF"
+        android:backgroundTint="#201E28"
+        android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/link_to_auth"
+        android:id="@+id/link_to_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:text="Sign in"
+        android:text="Sign up"
         android:textColor="#fdfdff"
         android:textSize="17sp"
         android:textStyle="bold"
@@ -81,6 +73,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.143" />
-
 
 </LinearLayout>

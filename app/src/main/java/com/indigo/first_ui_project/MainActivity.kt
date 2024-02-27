@@ -1,12 +1,14 @@
-package com.simple_auth_page
+package com.indigo.first_ui_project
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
-import com.indigo.first_ui_project.DbHelper
-import com.indigo.first_ui_project.User
+import com.simple_auth_page.AuthActivity
+import com.simple_auth_page.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +19,12 @@ class MainActivity : AppCompatActivity() {
         val emailField: EditText = findViewById(R.id.email)
         val passwordField: EditText = findViewById(R.id.password)
         val button: Button = findViewById(R.id.button)
+        val linkToAuth: TextView = findViewById(R.id.link_to_auth)
+
+        linkToAuth.setOnClickListener {
+            val intent = Intent(this, AuthActivity::class.java)
+            startActivity(intent)
+        }
 
         button.setOnClickListener {
             val login = loginField.text.toString().trim()

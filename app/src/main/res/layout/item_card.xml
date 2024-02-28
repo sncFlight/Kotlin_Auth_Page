@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    android:background="#AE830D">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/book" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:gravity="end"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/item_button"
+        android:paddingHorizontal="20dp"
+        android:layout_width="200dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#D5A10F"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingVertical="10dp"
+        android:text="Details" />
+
+</LinearLayout>
